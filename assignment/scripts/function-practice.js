@@ -115,16 +115,31 @@ console.log('multiplied 3 numbers', multiplyThree(2,3,4));
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
-  if ( number > 0 ){
-    return;
+  if ( number >= 0 ){
+    return ('true!');}
+    else if ( number < 0 ){ 
+      return ('false!');// not seeing why it console reads undefined here - dang needed an 'else if'
+    }
   }
-    return;
-}
+
+// used similar logic in our group work this week
+//function comparisonPractice(firstNumber, secondNumber){
+  //if (firstNumber === secondNumber)
+  //  return ('The numbers are the same!')
+  //if (firstNumber > secondNumber) {
+  //  return firstNumber('The first number was bigger!');
+  //} else if (secondNumber > firstNumber){
+  //  return ('The second number was bigger!');
+  //} 
+  //} 
+  //console.log(comparisonPractice(9, 9));
+
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
 console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+console.log( 'isPositive - should say false', isPositive(-3) );// else if got methrowing undefined
 
 
 // 6. Function to return the _last_ item in an array. If the 
