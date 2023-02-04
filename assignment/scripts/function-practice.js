@@ -14,10 +14,18 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName() {
-   return 'Ryan';
+function greet(name) {
+  console.log('Hello ' + name);
 }
-console.log('Hello', helloName());// several bad attempts below
+greet('Ryan!');
+
+//function helloName(name) {
+// return ('Hello ', + name);
+//console.log('Hello' , + name);
+//}
+//helloName ('Ryan');// seems forced, not utilizing the function,input, argument correctly
+
+// several bad attempts below
 
 // Remember to call the function to test
 // console.log('Hello', name!);
@@ -48,12 +56,15 @@ console.log('Hello', helloName());// several bad attempts below
 
 
 // 3. Function to add two numbers together & return the result
+// return firstNumber + secondNumber;
 function addNumbers() {
-  let result = addNumbers (1, 2);
+  let firstNumber = 1;
+  let secondNumber = 2;
+  let result = ('firstNumber', 'secondNumber');
 }
-console.log('Adding 1 + 2 = ', addNumbers());
+//console.log('Adding 1 + 2 = ', result);
 
-  // return firstNumber + secondNumber;
+ 
   //let result = addNumbers(1, 2); // expect result to be 3
   //console.log('Adding 1 + 2 = ', result);
 
