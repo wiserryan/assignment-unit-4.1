@@ -58,11 +58,23 @@ helloName('Ryan!');
 // 3. Function to add two numbers together & return the result
 // return firstNumber + secondNumber;
 
-function add(firstNumber, secondNumber){
-  let result = firstNumber + secondNumber;
-  return result;
+function sum( firstNumber, secondNumber){
+  return firstNumber + secondNumber;
 }
-add(1,2);
+console.log('Here we added numbers', sum(1, 2));
+
+
+
+
+//function add(firstNumber, secondNumber){
+//  let result = firstNumber + secondNumber;
+//  return result;
+//}
+//add(1,2);
+//function addNumbers(){
+//let result = ('firstNumber' + 'secondNumber'); // expect result to be 3
+//}
+//addNumbers(1,2, result);
 
 //function addNumbers (firstNumber, secondNumber){
 //  console.log('firstNumber' + 'secondNumber');
