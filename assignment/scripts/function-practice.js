@@ -99,9 +99,17 @@ console.log('Here we added numbers', sum(1, 2));
 
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( firstNumber, secondNumber, thirdNumber){
+  return firstNumber * secondNumber * thirdNumber;
 }
+console.log('multiplied 3 numbers', multiplyThree(2,3,4));
+
+// used this template again
+//function additionPractice( firstNumber, secondNumber){
+ // return firstNumber + secondNumber;
+//}
+//console.log('Here we added numbers', additionPractice(4, 5));
+
 
 
 // 5. Function that will return true if a number is positive, 
