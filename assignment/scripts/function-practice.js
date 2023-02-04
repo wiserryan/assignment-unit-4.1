@@ -14,10 +14,10 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function greet(name) {
+function helloName(name) {
   console.log('Hello ' + name);
 }
-greet('Ryan!');
+helloName('Ryan!');
 
 //function helloName(name) {
 // return ('Hello ', + name);
@@ -31,7 +31,7 @@ greet('Ryan!');
 // console.log('Hello', name!);
 
 
-      //    attempts//
+      //  more attempts  //
 // let firstName = 'Ryan';
 // let lastName = 'Wiser';
 // let name = 'firstName' + 'lastName';
@@ -57,11 +57,27 @@ greet('Ryan!');
 
 // 3. Function to add two numbers together & return the result
 // return firstNumber + secondNumber;
-function addNumbers() {
-  let firstNumber = 1;
-  let secondNumber = 2;
-  let result = ('firstNumber', 'secondNumber');
+
+function add(firstNumber, secondNumber){
+  let result = firstNumber + secondNumber;
+  return result;
 }
+add(1,2);
+
+//function addNumbers (firstNumber, secondNumber){
+//  console.log('firstNumber' + 'secondNumber');
+//}
+//addNumbers(1,2);
+
+//let result = addNumbers(1, 2); // expect result to be 3
+//console.log('Adding 1 + 2 = ', result);
+//function addNumbers(result) {
+  //let firstNumber = 1;
+  //let secondNumber = 2;
+  //result = firstNumber + secondNumber;
+//}
+//addNumbers();
+
 //console.log('Adding 1 + 2 = ', result);
 
  
