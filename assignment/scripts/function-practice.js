@@ -14,16 +14,49 @@ console.log('Test - should say "Hello World!"', hello());
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName( name ) {
-  return;
+function helloName() {
+   return 'Ryan';
 }
+console.log('Hello', helloName());// several bad attempts below
+
 // Remember to call the function to test
+// console.log('Hello', name!);
+
+
+      //    attempts//
+// let firstName = 'Ryan';
+// let lastName = 'Wiser';
+// let name = 'firstName' + 'lastName';
+// console.log('Hello', name);
+// let helloName = greet( 'Hello', firstName);
+
+//const fName = 'Harry';
+//const lName = 'Potter';
+//greet(fName, lName);
+
+//function helloName(name) {
+//let helloName = 'Ryan';
+//console.log('Hello', helloName);
+//}
+//function helloName (name) {
+//let firstName = 'Ryan';
+//let greeting = `Hello ${firstName}`;
+//}
+//console.log(`Hello ${firstName}`);
+
+
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
+function addNumbers() {
+  let result = addNumbers (1, 2);
 }
+console.log('Adding 1 + 2 = ', addNumbers());
+
+  // return firstNumber + secondNumber;
+  //let result = addNumbers(1, 2); // expect result to be 3
+  //console.log('Adding 1 + 2 = ', result);
+
 
 
 // 4. Function to multiply three numbers & return the result
