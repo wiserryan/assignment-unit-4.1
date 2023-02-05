@@ -144,9 +144,27 @@ console.log( 'isPositive - should say false', isPositive(-3) );// else if got me
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
-
+function getLast(array) {
+  let group = ['r', 'a', 'n', 'd', 'o', 'm'];
+  let guess = [];
+  let guessLength = guess.push('r','a','n','d','o','m'); 
 }
+//console.log('guessLength', guessLength); // 5
+
+//console.table(guess);
+
+//console.log('Hello World.');
+//let answer = ['w', 'o', 'r', 'l', 'd'];
+//let guess = []; // empty array
+//let guessLength = guess.push('a', 'r', 'r', 'a', 'y');
+//guess.pop(); // remove the last item
+//guess.push('y');
+//console.log('guessLength', guessLength); // 5
+// special console log for arrays
+//console.table(guess);
+
+
+
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
@@ -154,6 +172,39 @@ function getLast( array ) {
 function find( value, array ){
   
 }
+/**
+ * 
+ * @param {String} letter the thing to search for 
+ * @param {Array} listOfLetters array of items to search through
+ * 
+ * @return {Boolean} return true if a match was found, otherwise false
+*/
+function find(letter, listOfLetters) {
+  // value will be 'L'
+  // list of letters will be ['H', 'E', 'L', 'L', 'O']
+  for(let item of listOfLetters){
+    console.log(letter, item); // L H // L E // L L // L L????? // L O?????????? seems like my function stops once first match found, doesn't continue through Array
+       if(letter === item) {
+        console.log('We have a match!');
+        return true  // if I remove this, it runs through entire array but returns false
+      } else {
+         console.log('Does not match');
+         //return true;
+       }
+  } 
+        // if we got here, there were not matches
+        return false;
+}
+console.log(`Find 'L' in ['H', 'E', 'L', 'L', 'O'], expect: true -`, find('L', ['H', 'E', 'L', 'L', 'O']));
+console.log(`Find 'T' in ['H', 'E', 'L', 'L', 'O'], expect: false -`, find('T', ['H', 'E', 'L', 'L', 'O']));
+
+// must have watched your video on reviewing this questions 3x now, 
+// great explanation on thought process and going through each part of the function.
+// I somehow still don't have it working correctly but it is getting closer 
+
+
+
+
 
 // ----------------------
 // Stretch Goals
