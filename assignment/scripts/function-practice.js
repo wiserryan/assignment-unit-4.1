@@ -145,10 +145,34 @@ console.log( 'isPositive - should say false', isPositive(-3) );// else if got me
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
 function getLast(array) {
-  let group = ['r', 'a', 'n', 'd', 'o', 'm'];
-  let guess = [];
-  let guessLength = guess.push('r','a','n','d','o','m'); 
+ //for (let getLast of array){
+      //if array === [];
+      //return undefined;
+      let arry = [2, 4, 6, 8, 10, 12, 14, 16];
+      let getLast = arry[arry.length - 1];
 }
+//console.log(getLast);
+      console.log(getLast(2, 4, 6, 8, 10, 12, 14, 16));
+
+ 
+//}// first attempt below
+//console.log('getLast will return last item in array', getLast(['crawl', 'walk', 'run']));
+//console.log(getLast.length - 1);
+//console.log('getLast will return last item in array', getLast(['crawl', 'walk', 'run']));
+  
+//pasted notes for ref
+//let hobbies = ['going on walks', 'playing guitar', 'shoveling snow'];
+  //for (let i=1; i<4; i++) {
+  //    console.log(`${i}. ${hobbies[i]}`);
+  //}
+  //    console.log(hobbies.length);
+  
+  
+  //more notes trying to ref
+  //let group = ['r', 'a', 'n', 'd', 'o', 'm'];
+  //let guess = [];
+  //let guessLength = guess.push('r','a','n','d','o','m'); 
+//}
 //console.log('guessLength', guessLength); // 5
 
 //console.table(guess);
@@ -172,6 +196,10 @@ function getLast(array) {
 function find( value, array ){
   
 }
+// I must've watched your video on reviewing this questions 3x now, 
+// great explanation on thought process and going through each part of the function.
+// I somehow still don't have it working correctly but it is getting closer 
+
 /**
  * 
  * @param {String} letter the thing to search for 
@@ -198,9 +226,6 @@ function find(letter, listOfLetters) {
 console.log(`Find 'L' in ['H', 'E', 'L', 'L', 'O'], expect: true -`, find('L', ['H', 'E', 'L', 'L', 'O']));
 console.log(`Find 'T' in ['H', 'E', 'L', 'L', 'O'], expect: false -`, find('T', ['H', 'E', 'L', 'L', 'O']));
 
-// must have watched your video on reviewing this questions 3x now, 
-// great explanation on thought process and going through each part of the function.
-// I somehow still don't have it working correctly but it is getting closer 
 
 
 
